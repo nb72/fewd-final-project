@@ -1,16 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <script defer src="app.js"></script>
+    <title>Parallax Example</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
 </head>
 
 <body>
-    <h>Hello world!</h>
+    <div id="circle">
+        <img src="head.png" alt="" width="150px">
+    </div>
+    <!-- <div>
+        <img id="image" src="http://images.pictureshunt.com/pics/m/mouse-8557.JPG" />
+    </div> -->
+    <div>
+        <div class="bg">
+            <h2>Flying to the Moon</h2>
+        </div>
+
+        <div class="container">
+            <div class="overlay" class="partial" id="part1">
+                <div class="content">
+                    <img class="moon" src="moon.png" alt="" width="100%">
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="partial" id="part2">
+                <div class="content">
+                    <h2>Take off...</h2>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="partial" id="part3">
+                <div class="content">
+                    <h2>
+                        Don't look back.
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="partial" id="part4">
+                <div class="content">
+                    <h2>...the Moon!</h2>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
