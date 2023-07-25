@@ -16,6 +16,11 @@ body {
     /* border: 2px solid rgb(255, 255, 255); */
 }
 
+#head {
+    position: absolute;
+    text-align: center;
+}
+
 .bg {
     position: relative;
     background-size: cover;
