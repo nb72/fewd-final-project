@@ -1,12 +1,12 @@
-//the cursor is following the mouse here:
-// document.addEventListener('mousemove', function (e) {
-//     preventdefault();
-//     let circle = document.getElementById('circle');
-//     let left = e.pageX;
-//     let top = e.pageY;
-//     circle.style.left = left + 'px';
-//     circle.style.top = top + 'px';
-// });
+// the cursor is following the mouse here:
+document.addEventListener('mousemove', function (e) {
+    // preventdefault();
+    let circle = document.getElementById('circle');
+    let left = e.pageX;
+    let top = e.pageY;
+    circle.style.left = left + 'px';
+    circle.style.top = top + 'px';
+});
 
 //the function that makes the words appear one by one:
 function typing(element, text, speed) {
@@ -35,11 +35,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
-$(document).mousemove(function (e) {
-    $("#head").css({
-        left: e.pageX,
-        top: e.pageY
-    });
-});
+
 
 
