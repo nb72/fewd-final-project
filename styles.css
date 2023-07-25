@@ -37,6 +37,21 @@ body {
     z-index: -3;
 }
 
+#typewriter {
+    visibility: hidden;
+}
+
+
+p {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 50px;
+    font-family: 'Orbitron', sans-serif;
+    padding-top: 350px;
+}
+
 h2 {
     /* color: rgb(248, 255, 152); */
     text-shadow: rgb(0, 204, 255) 1px 0 10px;
@@ -70,18 +85,22 @@ h2 {
 }
 
 #part2 {
-    background-image: url('ship.png');
-    z-index: -2;
-    display: flex;
-    align-items: flex-end;
+    background-image: url('images/ship.png');
+    /* background-position: center center z-index: -2; */
+    background-size: 60%;
+    /* display: flex;
+    align-items: flex-end; */
     bottom: 0;
     justify-content: center;
     vertical-align: middle;
-    height: 600px;
+    height: 400px;
+    /* background-attachment: fixed;
+    background-position: center center;
+    background-size: cover; */
 }
 
 #part3 {
-    background-image: url('mountains.png');
+    background-image: url('images/mountains.png');
     z-index: -1;
 }
 
@@ -100,13 +119,53 @@ h2 {
 }
 
 #part4 {
-
     background-color: rgb(11, 11, 74);
-    z-index: -5;
-    display: flex;
-    align-items: flex-end;
+    z-index: -1;
+    /* display: flex;
+    align-items: flex-end; */
     bottom: 0;
     justify-content: center;
     vertical-align: middle;
     height: 700px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.guide {
+    z-index: 1;
+    position: flex;
+    align-items: flex-end;
+}
+
+@media screen and (max-width: 768px) {
+    h2 {
+        font-size: 24px;
+    }
+
+    #part2 {
+        height: 300px;
+    }
+}
+
+.content {
+    position: center;
+
+}
+
+@media screen and (min-width: 768px) {
+    #part4 {
+        height: 100vh;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .part2 {
+        background-size: 40%;
+    }
+}
+
+.guide {
+    text-decoration: none;
 }
