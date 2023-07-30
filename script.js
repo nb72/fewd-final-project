@@ -1,7 +1,7 @@
 // the cursor is following the mouse here:
 document.addEventListener('mousemove', function (e) {
     // preventdefault();
-    let circle = document.getElementById('circle');
+    let circle = document.getElementById('travel-agent');
     let left = e.pageX;
     let top = e.pageY;
     circle.style.left = left + 'px';

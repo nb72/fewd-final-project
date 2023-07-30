@@ -3,54 +3,50 @@
 body {
     margin: 0;
     padding: 0;
-    height: 300vh;
+    height: 250vh;
     background-color: rgb(11, 11, 74);
-}
-
-#circle {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    height: 35px;
-    width: 35px;
-    border-radius: 50%;
-    /* border: 2px solid rgb(255, 255, 255); */
-}
-
-#head {
-    position: absolute;
-    text-align: center;
-}
-
-.bg {
-    position: relative;
+    background-image: url("../images/moon.png");
+    background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     background-attachment: fixed;
-    width: 100%;
-    height: 100vh;
-    overflow: auto;
-    z-index: 1;
 }
 
-.img {
-    height: auto;
-    width: 100%;
-    position: relative;
-    z-index: -3;
+@media screen and (max-width: 768px) {
+    body {
+        background-image: url("../images/moon.png");
+        background-repeat: no-repeat;
+        background-size: 130%;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    #part-4 {
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
 }
 
 #typewriter {
     visibility: hidden;
 }
 
-p {
-    color: rgb(255, 255, 255);
-    font-size: 20px;
-    text-align: center;
-    margin-top: 0px;
-    padding-top: 50px;
-    font-family: 'Orbitron', sans-serif;
-    padding-top: 350px;
+#travel-agent {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
 }
+
+/* #head {
+    position: absolute;
+    text-align: center;
+} */
 
 h2 {
     /* color: rgb(248, 255, 152); */
@@ -63,6 +59,8 @@ h2 {
     padding-top: 350px;
     font-family: 'Orbitron', sans-serif;
     padding-top: 250px;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 ul {
@@ -78,147 +76,31 @@ ul {
     text-decoration: none;
 }
 
-.pass {
-    display: flex;
-    justify-content: center;
-    margin-top: 0px;
-    margin-bottom: 0;
-    padding-bottom: 0;
-    padding-top: 0;
-}
-
-.what-to-do {
-    display: flex;
-    justify-content: center;
-    margin-top: 0px;
-    margin-bottom: 0;
-    padding-bottom: 0;
-    padding-top: 0;
-}
-
-div {
-    margin: 0;
-    padding: 0;
-}
-
 .container {
-    position: relative;
     height: 100vh;
-    overflow: hidden;
 }
 
-.partial {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
+#part-2 {
+    height: 200vh;
+    background-image: url('../images/mountains.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+#part-3 {
+    height: 200vh;
+    background-image: url('../images/ship.png');
     background-repeat: no-repeat;
 }
 
-@media screen and (max-width: 768px) {
-    .partial {
-        height: 300px
-    }
-}
+/* #part-4 {
+    background-image: url("../images/moonfixed.png");
+} */
 
-#part1 {
-    z-index: -2;
-}
-
-#part2 {
-    background-image: url('images/ship.png');
-    /* background-position: center center z-index: -2; */
-    background-size: 40%;
-    /* display: flex;
-    align-items: flex-end; */
-    bottom: 0;
-    justify-content: center;
-    vertical-align: middle;
-    height: 400px;
-    /* background-attachment: fixed;
-    background-position: center center;
-    background-size: cover; */
-}
-
-#part3 {
-    background-image: url('images/mountains.png');
-    z-index: -1;
-}
-
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-}
-
-.moon {
-    position: absolute;
-    z-index: -5;
-}
-
-#part4 {
-    background-color: rgb(11, 11, 74);
-    z-index: -1;
-    /* display: flex;
-    align-items: flex-end; */
-    bottom: 0;
-    justify-content: center;
-    vertical-align: middle;
-    height: 700px;
-    padding-bottom: 0;
-    margin-bottom: 0;
-}
-
-.guide {
-    z-index: 1;
-    position: flex;
-    align-items: flex-end;
-}
-
-@media screen and (max-width: 768px) {
-    h2 {
-        font-size: 24px;
-    }
-
-    #part2 {
-        height: 300px;
-    }
-}
-
-.content {
-    position: center;
-
-}
-
-@media screen and (min-width: 768px) {
-    #part4 {
-        height: 100vh;
-    }
-
-    h2 {
-        text-align: center;
-    }
-
-    .part2 {
-        background-size: 40%;
-    }
-}
-
-/* Your CSS styles here */
-.box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
 
 .navbar {
-    background-color: rgb(5, 5, 64);
+    background-color: transparent;
     display: flex;
     justify-content: center;
     padding: 15px 0;
@@ -257,7 +139,44 @@ div {
     transform: scale(1.1);
 }
 
-/* stars animation */
+/* .grid-container {
+    display: flex;
+    justify-content: space-between;
+} */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 18px;
+    color: rgb(76, 183, 255);
+}
+
+.grid-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+@media (max-width: 767px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+}
 
 .stars {
     position: fixed;
