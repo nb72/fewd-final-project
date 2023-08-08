@@ -26,26 +26,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-//navbar
-const icon = document.querySelector('.icon');
-const myNavbar = document.querySelector('.nav');
-const closeMenu = document.querySelectorAll('.close-menu');
-const closeAll = document;
-
-icon.addEventListener('click', function () {
-    console.log("clicked hamburger");
-    myNavbar.classList.add("show");
-});
-
-closeMenu.forEach((item) => {
-    item.addEventListener('click', () => {
-        myNavbar.classList.remove('show');
-    });
-});
-
-closeAll.addEventListener('click', () => {
-    myNavbar.classList.remove('show');
-});
 
 
 
