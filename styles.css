@@ -205,7 +205,7 @@ ul {
 }
 
 /* passes list in squares bigger screen */
-@media screen and (min-width:348px) {
+@media screen and (max-width:348px) {
     .grid-container {
         padding-left: 25%;
         padding-right: 25%;
@@ -232,7 +232,12 @@ ul {
 
     #part-3 {
         background-image: url('images/ship.png');
-        background-size: 80%;
+        background-size: 60%;
+    }
+
+    #part-4 {
+        background-image: url('images/moonfixed.png');
+        background-size: 150%;
     }
 }
 
@@ -255,11 +260,11 @@ ul {
     }
 }
 
-@media screen and (max-width:995px) {
+/* @media screen and (max-width:995px) {
     h2 {
         font-size: 50px;
     }
-}
+} */
 
 /* the stars */
 .stars {
@@ -272,6 +277,7 @@ ul {
     z-index: -1;
 }
 
+/* stars with glow  */
 .star {
     position: absolute;
     width: 2px;
