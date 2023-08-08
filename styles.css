@@ -5,7 +5,7 @@ body {
     padding: 0;
     height: 250vh;
     background-color: rgb(11, 11, 74);
-    background-image: url("images/moon.png");
+    /* background-image: url("images/moon.png"); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
