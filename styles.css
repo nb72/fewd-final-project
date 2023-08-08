@@ -13,19 +13,20 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-    body {
-        background-image: url("images/moon.png");
-        background-repeat: no-repeat;
-        background-size: 130%;
-        background-position: center;
-        background-attachment: fixed;
-    }
-
     h2 {
-        font-size: 24px;
+        font-size: 14px;
     }
 
     #part-4 {
+        background-image: url("images/moonfixed.png");
+        background-size: 250%;
+        background-repeat: no-repeat;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #part-4 {
+        background-image: url("images/moonfixed.png");
         background-size: 100%;
         background-repeat: no-repeat;
     }
@@ -34,19 +35,6 @@ body {
 #typewriter {
     visibility: hidden;
 }
-
-#travel-agent {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    height: 35px;
-    width: 35px;
-    border-radius: 50%;
-}
-
-/* #head {
-    position: absolute;
-    text-align: center;
-} */
 
 h2 {
     /* color: rgb(248, 255, 152); */
@@ -77,11 +65,11 @@ ul {
 }
 
 .container {
-    height: 100vh;
+    height: 80vh;
 }
 
-#part-2 {
-    height: 200vh;
+#part-1 {
+    height: 150vh;
     background-image: url('images/mountains.png');
     background-repeat: no-repeat;
     background-size: 100%;
@@ -89,60 +77,62 @@ ul {
 }
 
 #part-3 {
-    height: 200vh;
     background-image: url('images/ship.png');
     background-repeat: no-repeat;
 }
 
-/* #part-4 {
-    background-image: url("../images/moonfixed.png");
-} */
+.bottom {
+    height: 20vh;
+}
 
-
+/*navbar design  */
 .navbar {
-    background-color: transparent;
     display: flex;
-    justify-content: center;
-    padding: 15px 0;
-    margin-bottom: 100px;
-}
-
-.navbar-center {
-    display: flex;
-    max-width: 800px;
+    justify-content: flex;
+    align-items: center;
+    overflow: hidden;
+    padding: 10px;
+    position: fixed;
+    top: auto;
+    bottom: 30px;
+    left: 20px;
     width: 100%;
-    justify-content: center;
 }
 
+/* design  */
 .navbar-link {
     text-decoration: none;
     font-family: 'Orbitron', sans-serif;
     font-size: 20px;
     color: white;
-    margin: 0 10px;
+    margin: 0 20px;
     padding: 8px 10px;
     transition: transform 0.3s ease;
 }
 
+/* design  */
 .navbar-link:hover {
     color: rgb(255, 255, 160);
     transform: scale(1.1);
 }
 
-.pass-link {
-    list-style: none;
-    text-decoration: none;
-}
+@media screen and (max-width:768px) {
+    #my-navbar {
+        display: flex;
+        flex-direction: column;
+    }
 
-.pass-link:hover {
-    color: rgb(175, 204, 243);
-    transform: scale(1.1);
-}
+    .navbar-link {
+        background-color: rgba(255, 255, 255, 0.1);
+        margin-bottom: 10px;
+        border-radius: 3px;
+    }
 
-/* .grid-container {
-    display: flex;
-    justify-content: space-between;
-} */
+    .navbar {
+        position: fixed;
+        flex-direction: column;
+    }
+}
 
 .grid-container {
     display: grid;
@@ -169,13 +159,6 @@ ul {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     background-color: rgba(255, 255, 255, 0.3);
-}
-
-@media (max-width: 767px) {
-    .grid-container {
-        grid-template-columns: 1fr;
-        gap: 35px;
-    }
 }
 
 .stars {

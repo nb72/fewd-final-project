@@ -1,16 +1,6 @@
-// the cursor is following the mouse here:
-document.addEventListener('mousemove', function (e) {
-    // preventdefault();
-    let circle = document.getElementById('travel-agent');
-    let left = e.pageX;
-    let top = e.pageY;
-    circle.style.left = left + 'px';
-    circle.style.top = top + 'px';
-});
-
 //the function that makes the words appear one by one:
 function typing(element, text, speed) {
-    //preventdefault();
+    // preventdefault();
     let i = 0;
     const interval = setInterval(() => {
         element.textContent += text.charAt(i);
@@ -34,6 +24,32 @@ document.addEventListener("DOMContentLoaded", function () {
     typing(h2Element, textToType, typingSpeed);
 
 });
+
+
+//navbar
+const icon = document.querySelector('.icon');
+const myNavbar = document.querySelector('.nav');
+const closeMenu = document.querySelectorAll('.close-menu');
+const closeAll = document;
+
+icon.addEventListener('click', function () {
+    console.log("clicked hamburger");
+    myNavbar.classList.add("show");
+});
+
+closeMenu.forEach((item) => {
+    item.addEventListener('click', () => {
+        myNavbar.classList.remove('show');
+    });
+});
+
+closeAll.addEventListener('click', () => {
+    myNavbar.classList.remove('show');
+});
+
+
+
+
 
 
 
