@@ -258,8 +258,14 @@ ul {
         font-size: 16px;
     }
 
+    #part-1 {}
+
     #part-2 {
         height: 500px;
+    }
+
+    #part-2 h2 {
+        padding-top: 20px;
     }
 
     #part-3 {
@@ -269,10 +275,14 @@ ul {
     }
 
     #part-4 {
-        height: min-content;
+        height: 430px;
         background-image: url('images/moonfixed.png');
         background-size: 180%;
         background-repeat: no-repeat;
+    }
+
+    #part-4 h2 {
+        margin-bottom: 40px;
     }
 
 }
