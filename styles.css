@@ -155,7 +155,7 @@ ul {
 .grid-container {
     display: grid;
     grid-template-columns: 1fr, 1fr, 1fr;
-    gap: 8px;
+    gap: 10px;
     margin: 0;
     padding: 0;
 }
@@ -180,7 +180,7 @@ ul {
 
 .what-to-do {
     height: 30vh;
-    padding-top: 150px;
+    padding-top: 170px;
     padding-bottom: 20px;
 }
 
@@ -191,7 +191,7 @@ ul {
         grid-template-columns: 1fr;
         grid-gap: 30px;
         list-style: none;
-        margin-top: 100px;
+        margin-top: 30px;
         margin-bottom: 10px;
     }
 
