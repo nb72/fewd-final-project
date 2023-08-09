@@ -12,7 +12,19 @@ body {
     background-attachment: fixed;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 769px) {
+
+    /* STYLES FOR WIDE SCREENS GO HERE */
+    #part-4 {
+        background-image: url("images/moonfixed.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+
+    /* STYLES FOR TABLETS ARE HERE */
     h2 {
         font-size: 24px;
     }
@@ -24,14 +36,19 @@ body {
     }
 }
 
-@media screen and (min-width: 768px) {
-    #part-4 {
-        background-image: url("images/moonfixed.png");
-        background-size: 100%;
-        background-repeat: no-repeat;
+@media only screen and (max-device-width: 480px) and (orientation:protrait) {
+
+    /* STYLES HERE ARE FOR PHONES*/
+    .container {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        height: 50vh;
     }
 }
 
+
+/* THESE CODES SHOULD WORK ON ALL TYPES OF SCREENS */
 #typewriter {
     visibility: hidden;
 }
@@ -99,7 +116,7 @@ ul {
     width: 100%;
 }
 
-/* design  */
+/* navbar link design  */
 .navbar-link {
     text-decoration: none;
     font-family: 'Orbitron', sans-serif;
@@ -110,12 +127,13 @@ ul {
     transition: transform 0.3s ease;
 }
 
-/* design  */
+/* navbar link on hover design  */
 .navbar-link:hover {
     color: rgb(255, 255, 160);
     transform: scale(1.1);
 }
 
+/* navbar on medium screens */
 @media screen and (max-width:768px) {
     #my-navbar {
         display: flex;
@@ -261,13 +279,8 @@ ul {
     }
 }
 
-/* @media screen and (max-width:995px) {
-    h2 {
-        font-size: 50px;
-    }
-} */
 
-/* the stars */
+/* stars with glow show up on all screens */
 .stars {
     position: fixed;
     top: 0;
@@ -278,7 +291,6 @@ ul {
     z-index: -1;
 }
 
-/* stars with glow  */
 .star {
     position: absolute;
     width: 2px;
