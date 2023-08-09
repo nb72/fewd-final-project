@@ -45,6 +45,16 @@ body {
         margin: 0 auto;
         height: 50vh;
     }
+
+    #part-3 {
+        background-image: url('images/ship.png');
+        background-size: 40%;
+    }
+
+    #part-4 {
+        background-image: url('images/moonfixed.png');
+        background-size: 50%;
+    }
 }
 
 
@@ -223,7 +233,7 @@ ul {
 }
 
 /* passes list in squares bigger screen */
-@media screen and (max-width:348px) {
+@media screen and (max-width:391px) {
     .grid-container {
         padding-left: 25%;
         padding-right: 25%;
@@ -248,14 +258,21 @@ ul {
         font-size: 16px;
     }
 
+    #part-2 {
+        height: 500px;
+    }
+
     #part-3 {
+        height: 400px;
         background-image: url('images/ship.png');
-        background-size: 40%;
+        background-size: 50%;
     }
 
     #part-4 {
+        height: min-content;
         background-image: url('images/moonfixed.png');
-        background-size: 150%;
+        background-size: 180%;
+        background-repeat: no-repeat;
     }
 
 }
